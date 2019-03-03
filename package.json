@@ -1,0 +1,31 @@
+{
+  "name": "electron-fcm-boilerplate",
+  "version": "0.0.1",
+  "description": "Electron FCM Boilerplate",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "package": "npm-run-all package:*",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=out --icon=assets/icons/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub'",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/icons/win/app.ico",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out"
+  },
+  "repository": "",
+  "keywords": [],
+  "author": "keehyuk.park@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "electron-packager": "^13.0.1",
+    "electron-push-receiver": "^2.1.2",
+    "electron-reload": "^1.4.0",
+    "electron-winstaller": "^2.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "tether": "^1.4.5"
+  }
+}
